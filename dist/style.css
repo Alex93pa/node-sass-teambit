@@ -87,12 +87,13 @@ nav button .g-logo img {
   display: flex;
   height: 80px;
   justify-content: space-between;
-}
-.main-up .main-up-container .up-s-img .mini-img {
-  display: flex;
+  margin: 50px 0;
 }
 .main-up .main-up-container .up-s-img .mini-img img {
   height: 100%;
+}
+.main-up .main-up-container .up-s-img .mini-img p {
+  color: white;
 }
 .main-up .main-up-container .up-b-img {
   height: 250px;
@@ -106,4 +107,21 @@ nav button .g-logo img {
 .main-up .main-up-container hr {
   color: white;
   margin: 100px;
+}
+
+.center {
+  display: flex;
+}
+.center .screen {
+  display: flex;
+}
+.center .screen .left {
+  flex: 1;
+}
+.center .screen .right {
+  flex: 1;
+}
+.center .screen .left1 {
+  background-image: url(/images/employee-feedback.jpg?548c432ebbc49222e7cb2b3e2a026bfd);
+  background-size: cover;
 }
