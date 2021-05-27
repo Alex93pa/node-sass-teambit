@@ -1,13 +1,35 @@
-.up{
-    background-color: $bg-color;
-    h2{
-        text-align: center;
-    }
-    .up-s-img{
-        display: flex;
-        height: 80px;
-        img{
-            height: 100%;
+.main-up{
+    background-color: #0414B3;
+    .main-up-container{
+        padding: 20px 80px;
+        h2{
+            text-align: center;
+            color: white;
+        }
+        .up-s-img{
+            display: flex;
+            height: 80px;
+            justify-content: space-between;
+            .mini-img{
+                display: flex;
+                img{
+                    height: 100%;
+                }
+            }
+        }
+        .up-b-img{
+            height: 250px;
+            justify-content: center;
+            display: flex;
+            margin-top: 30px;
+            
+            img{
+                height: 100%;
+            }
+        }
+        hr{
+            color: white;
+            margin: 100px ;
         }
     }
 }
