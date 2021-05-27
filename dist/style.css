@@ -111,6 +111,7 @@ nav button .g-logo img {
 
 .center {
   display: flex;
+  padding: 20px 80px;
 }
 .center .screen {
   display: flex;
@@ -121,7 +122,6 @@ nav button .g-logo img {
 .center .screen .right {
   flex: 1;
 }
-.center .screen .left1 {
-  background-image: url(/images/employee-feedback.jpg?548c432ebbc49222e7cb2b3e2a026bfd);
-  background-size: cover;
+.center .screen img {
+  width: 100%;
 }
