@@ -1,0 +1,13 @@
+.up{
+    background-color: $bg-color;
+    h2{
+        text-align: center;
+    }
+    .up-s-img{
+        display: flex;
+        height: 80px;
+        img{
+            height: 100%;
+        }
+    }
+}
