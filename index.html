@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <link rel="stylesheet" href="dist/style.css">
     <title>Document</title>
 </head>
 <body>
+    <div id="app">
+        
 <!-- HEADER -->
     <header class="">
         <nav class="">
@@ -34,24 +37,24 @@
                     <div class="g-logo">
                         <img src="../imgs/google-logo.svg" alt=""> 
                     </div>
-                   Sign up
+                    Sign up
                 </button>
             </div>
         </nav>
 
         <div class="hero">
             <div class="hero-text">
-
+                
                 <h1>
                     Understand, recognize and develope your people.
                 </h1>
                 <h5>Teambit helps teams create a high performing culture with regular feedback</h5>
-                <div class="hero-btn">
+                <div class="btn">
                     <button>
                         <img src="../imgs/google-logo.svg" alt=""> Sign up with Google
                     </button>
-                         or    
-                    <button>
+                          or    
+                          <button>
                         <img src="../imgs/slack-logo.svg" alt=""> Sign up with Slack
                     </button>
                 </div>
@@ -63,10 +66,10 @@
         </div>
     </header>
 <!-- MAIN -->
-    <main>
-
+<main>
+    
     <!-- FIRST SECTION -->
-        <section class="main-up">
+    <section class="main-up">
             <div class="main-up-container">
 
                 <h2>Traditional people processes lead to disengagement and turnover</h2>
@@ -100,8 +103,8 @@
                 <h2>Here is how it work</h2>
             </div>
         </section>
-
-    <!-- SECOND SECTION -->
+        
+        <!-- SECOND SECTION -->
         <section class="center">
             <div class="section">
                 <div class="screen">
@@ -158,8 +161,8 @@
                 </div>
             </div>
         </section>
-
-    <!-- THIRD SECTION -->
+        
+        <!-- THIRD SECTION -->
         <section class="down">
             <h1>See Teambit for yourself</h1>
             <h1>Get started in second <img src="imgs\happy.svg" alt=""></h1>
@@ -168,16 +171,90 @@
                 <br>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eveniet numquam totam atque laudantium quo minus, vero, excepturi ad vel fugiat quasi nam dignissimos. Facere quaerat maiores ullam. Maxime, asperiores?</p>
                 <div class="author">
-    
-                    <img src="imgs\alex.png" alt="">
-                    <img src="imgs\bohdan.png" alt="">
+                    <div class="author-l">
+                        <img src="imgs\alex.png" alt="">
+                        <img src="imgs\bohdan.png" alt="">
+                    </div>
+                    <div class="author-r">
+                        <h6>Alex and Bohdan</h6>
+                        <p>Co-founder at Teambit</p>
+                    </div>
                 </div>
             </div>
+            <div class="btn">
+                <button>
+                    <img src="../imgs/google-logo.svg" alt=""> Sign up with Google
+                </button>
+                <div class="btn-over-text">
+                    or    
+                </div>     
+                <button>
+                    <img src="../imgs/slack-logo.svg" alt=""> Sign up with Slack
+                </button>
+            </div>
+            <div class="btn-over-text">or use your email address</div>
         </section>
     </main>
-<!-- FOOTER -->
+    <!-- FOOTER -->
     <footer>
+        <div class="footer-list1">
+            <img src="imgs\TB_logo.png" alt="">
+            <span>Teambit helps teams high performing</span>
+        </div>
+        <div class="footer-list">
+            <h4>Product</h4>
+                <ul>
+                    <li v-for="el in footerList1">
+                        <a href="el.link" v-if="el.link">
+                             {{ el.text }}
+                        </a>
+                    </li>
+                </ul>
+        </div>
+        <div class="footer-list">
+            <h4>About</h4>
+            <ul>
+                <li v-for="el in footerList1">
+                    <a href="el.link" v-if="el.link">
+                         {{ el.text }}
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-list">
+            <h4>Connect</h4>
+            <ul>
+                <li v-for="el in footerList2">
+                    <a href="el.link" v-if="el.link">
+                         {{ el.text }}
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-list">
+            <h4>Lobs</h4>
+            <ul>
+                <li v-for="el in footerList3">
+                    <a href="el.link" v-if="el.link">
+                         {{ el.text }}
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-list">
+            <h4>From the blogs</h4>
+            <ul>
+                <li v-for="el in footerList1">
+                    <a href="el.link" v-if="el.link">
+                         {{ el.text }}
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
 
     </footer>
+</div>
+<script src="script/script.js"></script>
 </body>
 </html>

@@ -75,6 +75,7 @@
 // THIRD SECTION
 .down{
     background-color: #0414B3;
+    padding: 50px 0;
     h1{
         color: white;
         text-align: center;
@@ -86,6 +87,26 @@
         border: 2px solid gray;
         border-radius: 5px;
         background-color: white;
-        color: black;
+        .author{
+            display: flex;
+            .author-l{
+                margin: 0 20px;
+                img{
+                    width: 55px;
+                }
+            }
+            h6{
+                color: #0414B3;
+            }
+        }
+    }
+    .btn{
+        display: flex;
+        justify-content: center;
+    }
+    .btn-over-text{
+        align-self: center;
+        text-align: center;
+        color: white;
     }
 }

@@ -1,0 +1,14 @@
+footer{
+    display: flex;
+    padding: 50px;
+    .footer-list1{
+        flex: 2;
+        img{
+            width: 40%;
+
+        }
+    }
+    .footer-list{
+        flex: 1;
+    }
+}

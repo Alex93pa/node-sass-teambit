@@ -9,6 +9,33 @@
   display: inline;
 }
 
+.btn {
+  margin-top: 30px;
+}
+.btn button {
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+  height: 50px;
+  padding: 10px 20px;
+}
+.btn button img {
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+  padding: 30px 0;
+}
+ul li {
+  padding-bottom: 10px;
+  font-size: 15px;
+}
+ul li a {
+  color: black;
+  text-decoration: none;
+}
+
 nav {
   height: 80px;
   border-bottom: solid;
@@ -53,19 +80,6 @@ nav button .g-logo img {
 }
 .hero .hero-text h1 {
   line-height: 70px;
-}
-.hero .hero-text .hero-btn {
-  margin-top: 30px;
-}
-.hero .hero-text .hero-btn button {
-  background-color: blue;
-  color: white;
-  border-radius: 5px;
-  height: 50px;
-  padding: 10px 20px;
-}
-.hero .hero-text .hero-btn button img {
-  height: 100%;
 }
 .hero .hero-img {
   flex: 1;
@@ -140,6 +154,7 @@ nav button .g-logo img {
 
 .down {
   background-color: #0414B3;
+  padding: 50px 0;
 }
 .down h1 {
   color: white;
@@ -152,5 +167,39 @@ nav button .g-logo img {
   border: 2px solid gray;
   border-radius: 5px;
   background-color: white;
-  color: black;
+}
+.down .chat .author {
+  display: flex;
+}
+.down .chat .author .author-l {
+  margin: 0 20px;
+}
+.down .chat .author .author-l img {
+  width: 55px;
+}
+.down .chat .author h6 {
+  color: #0414B3;
+}
+.down .btn {
+  display: flex;
+  justify-content: center;
+}
+.down .btn-over-text {
+  align-self: center;
+  text-align: center;
+  color: white;
+}
+
+footer {
+  display: flex;
+  padding: 50px;
+}
+footer .footer-list1 {
+  flex: 2;
+}
+footer .footer-list1 img {
+  width: 40%;
+}
+footer .footer-list {
+  flex: 1;
 }

@@ -7,8 +7,9 @@
 }
 
 
+@import "partial/variables";
 @import "partial/common";
+@import "partial/mixin";
 @import "partial/header";
 @import "partial/main";
-@import "partial/mixin";
-@import "partial/variables";
+@import "partial/footer";
