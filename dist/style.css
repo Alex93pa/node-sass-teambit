@@ -137,3 +137,20 @@ nav button .g-logo img {
 .center .section .screen .right .big-img {
   width: 100%;
 }
+
+.down {
+  background-color: #0414B3;
+}
+.down h1 {
+  color: white;
+  text-align: center;
+}
+.down .chat {
+  width: 50%;
+  margin: auto;
+  padding: 10px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+}
