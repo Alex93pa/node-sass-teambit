@@ -110,18 +110,30 @@ nav button .g-logo img {
 }
 
 .center {
-  display: flex;
   padding: 20px 80px;
 }
-.center .screen {
+.center .section .screen {
   display: flex;
 }
-.center .screen .left {
+.center .section .screen .left {
   flex: 1;
 }
-.center .screen .right {
+.center .section .screen .left .big-img {
+  width: 100%;
+}
+.center .section .screen .left .c-s-img {
+  height: 50%;
+  width: 50%;
+  display: block;
+}
+.center .section .screen .right {
   flex: 1;
 }
-.center .screen img {
+.center .section .screen .right .c-s-img {
+  height: 50%;
+  width: 50%;
+  display: block;
+}
+.center .section .screen .right .big-img {
   width: 100%;
 }

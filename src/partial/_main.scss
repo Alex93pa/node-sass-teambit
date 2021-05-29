@@ -41,18 +41,33 @@
 
 //SECOND SECTION
 .center{
-    display: flex;
     padding: 20px 80px;
-    .screen{
-        display: flex;
-        .left{
-            flex: 1;
-        }
-        .right{
-            flex: 1;
-        }
-        img{
-            width: 100%;
+    .section{
+        .screen{
+            display: flex;
+            .left{
+                flex: 1;
+                .big-img{
+                width: 100%;
+                }
+                .c-s-img{
+                    height: 50%;
+                    width: 50%;
+                    display: block;
+                }
+                
+            }
+            .right{
+                flex: 1;
+                .c-s-img{
+                    height: 50%;
+                    width: 50%;
+                    display: block;
+                }
+                .big-img{
+                    width: 100%;
+                }
+            }
         }
     }
 }
